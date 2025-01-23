@@ -1,0 +1,17 @@
+#. Write a program that takes a number num and returns its length.
+#Examples
+#number_length(10) ➞ 2
+#number_length(5000) ➞ 4
+
+
+num = int(input("Enter a number: "))
+
+if num == 0:
+  length = 1
+else:
+  length = 0
+  while num > 0:
+    num //= 10
+    length += 1
+
+print("The number of digits in", num, "is", length)
